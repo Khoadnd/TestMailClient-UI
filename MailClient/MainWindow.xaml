@@ -41,42 +41,59 @@
 
             <StackPanel Grid.Row="1">
 
+                <Button Width="120" Height="40" 
+                        Content="+ Compose"
+                        FontFamily="/Fonts/#Poppins"
+                        FontWeight="Medium"
+                        FontSize="16"
+                        HorizontalAlignment="Left"
+                        Margin="20,0,0,5"
+                        Foreground="White"
+                        Background="DodgerBlue">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
                 <RadioButton Content="Inbox"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource ButtonTheme}" 
+                             Style="{StaticResource RadioButtonTheme}" 
                              IsChecked="True"
                              Command="{Binding InboxViewCommand}"/>
                 <RadioButton Content="Sent"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource ButtonTheme}"
+                             Style="{StaticResource RadioButtonTheme}"
                              Command="{Binding SentViewCommand}"/>
                 <RadioButton Content="Drafts"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource ButtonTheme}"
+                             Style="{StaticResource RadioButtonTheme}"
                              Command="{Binding DraftsViewCommand}"/>
                 <RadioButton Content="Trash"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource ButtonTheme}"
+                             Style="{StaticResource RadioButtonTheme}"
                              Command="{Binding TrashViewCommand}"/>
 
             </StackPanel>
 
-            <TextBox Width="250"
+            <TextBox Width="200"
                      Height="40"
                      VerticalAlignment="Center"
                      HorizontalAlignment="Left"
-                     Margin="5"
+                     Margin="10"
                      Grid.Column="1"
                      Foreground="#CFCFCF"
                      Style="{StaticResource SearchBarTheme}"/>
+
+
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
