@@ -52,7 +52,7 @@
                     Click="btnMinimize_Click">
             </Button>
 
-            <TextBlock Text="MailClient"
+            <TextBlock Text="✉️ MailClient"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Left"
                    Foreground="White"
@@ -64,7 +64,7 @@
             <StackPanel Grid.Row="1" Margin="10">
 
                 <Button Width="120" Height="40" 
-                        Content="+ Compose"
+                        Content="➕ Compose"
                         FontFamily="/Fonts/#Poppins"
                         FontWeight="Medium"
                         FontSize="16"
